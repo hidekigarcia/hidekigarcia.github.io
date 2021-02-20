@@ -8,11 +8,25 @@
 <div class="w3-panel">
   <i class="w3-xlarge fa fa-bars"></i>
 </div>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
 <div class="w3-half w3-container">
   <h1 class="w3-xxlarge w3-text-light-grey">Hello</h1>
-  <h1 class="w3-xxlarge w3-text-grey">I am</h1>
+  <h1 class="w3-xxlarge w3-text-grey">this is</h1>
   <h1 class="w3-jumbo">ebee</h1>
 </div>
 <div class="w3-half w3-container w3-xlarge w3-text-grey">
