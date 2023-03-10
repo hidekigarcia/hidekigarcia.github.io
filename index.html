@@ -10,7 +10,32 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
+	
+
 <body>
 
 <!-- Navbar -->
@@ -63,7 +88,17 @@ body {font-family: "Lato", sans-serif}
     <p class="w3-justify">
 	<b>Hobbies:</b> Building mechanical keyboards, playing with my cat (Canelita), watching films, attending concterts, and listeining to music.
     </p>
-	 <img src="canelita.jpg" style="width:25%" class="center">
+<div class="row">
+  <div class="column">
+    <img src="canelita.jpg" style="width:25%" class="center">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
 
 	
 
